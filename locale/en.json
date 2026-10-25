@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Moonshot model discovery",
+    "description": "Makes \"Fetch available models\" call Moonshot's real GET /v1/models instead of returning the built-in static catalog, so newly released models such as kimi-k3.1-pro can be discovered and enabled."
+  }
+}
