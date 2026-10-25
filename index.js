@@ -1,5 +1,5 @@
 /**
- * dsh-moonshot-models —— 让 DSH 真正用 `GET /v1/models` 获取模型列表。
+ * dsh-api-better-get —— 让 DSH 真正用 `GET /v1/models` 获取模型列表。
  *
  * ## 为什么需要这一层
  *
@@ -32,14 +32,14 @@
  *   之后由 `dsh-llm-pi-ai` 正常建成 route —— 本插件不写任何配置。
  * - 插件卸载时把方法还原（`delete` 实例属性，落回原型方法）。
  *
- * @module dsh-moonshot-models
+ * @module dsh-api-better-get
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
 
 /** 插件名（与 package.json 保持一致）。 */
-export const name = 'dsh-moonshot-models';
+export const name = 'dsh-api-better-get';
 
 /**
  * 只注入 `llm`：本插件的方法挂在 llm 服务上。
@@ -215,5 +215,5 @@ export function apply(ctx, config) {
 				/* 服务已被拆除时无需还原 */
 			}
 		};
-	}, 'moonshot-models: discover models over GET');
+	}, 'api-better-get: discover models over GET');
 }
