@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Moonshot 模型发现",
+    "title": "更好的模型发现",
     "description": "让「获取可用模型」真正请求 Moonshot 的 GET /v1/models，而不是返回随包内置的静态目录；这样 kimi-k3.1-pro 之类的新模型才能被发现并启用。"
   }
 }
