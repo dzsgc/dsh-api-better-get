@@ -1,6 +1,6 @@
 - insert:
-    - id: moonshot-models
-      name: dsh-moonshot-models
+    - id: api-better-get
+      name: dsh-api-better-get
       config:
         provider: moonshotai-cn
         baseURL: https://api.moonshot.cn/v1
