@@ -1,0 +1,7 @@
+- insert:
+    - id: moonshot-models
+      name: dsh-moonshot-models
+      config:
+        provider: moonshotai-cn
+        baseURL: https://api.moonshot.cn/v1
+        apiKeyEnv: MOONSHOTAI_CN_API_KEY
